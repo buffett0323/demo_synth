@@ -4,14 +4,11 @@
 Code is available <a href="https://github.com/buffett0323/query_ss">here</a>
 </div>
 
-<div style="text-align: justify"> 
-
 ## Abstract
 
 This collection presents 32 audio pairs, each containing 6 distinct audio files for comprehensive audio analysis and comparison. Each pair includes original audio, reference audio, ground truth audio, proposed model, CTD <a href="#note1" id="note1ref">[1]</a>, and SS-VQVAE <a href="#note2" id="note2ref">[2]</a>, enabling detailed evaluation of multiple audio processing methods and reconstruction quality. The dataset provides a standardized framework for comparing different audio reconstruction approaches across various audio content types.
 
 
-</div>
 
 <p align="center">
 <img src="images/adsr_model_no_ca.jpg" alt="Model Framework">
