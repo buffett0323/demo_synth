@@ -60,7 +60,7 @@ This section presents all 16 audio pairs. For each pair, we present the original
       <td><audio src="audios/01_orig.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/01_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/01_gt.wav" controls style="width: 160px"></audio></td>
-      <td><audio src="audios/01_recon_proposed.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/01_recon_no_mask.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/01_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/01_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -69,7 +69,7 @@ This section presents all 16 audio pairs. For each pair, we present the original
       <td><audio src="audios/02_orig.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/02_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/02_gt.wav" controls style="width: 160px"></audio></td>
-      <td><audio src="audios/02_recon_proposed.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/02_recon_no_mask.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/02_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/02_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -78,7 +78,7 @@ This section presents all 16 audio pairs. For each pair, we present the original
       <td><audio src="audios/03_orig.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/03_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/03_gt.wav" controls style="width: 160px"></audio></td>
-      <td><audio src="audios/03_recon_proposed.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/03_recon_no_mask.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/03_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/03_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -87,7 +87,7 @@ This section presents all 16 audio pairs. For each pair, we present the original
       <td><audio src="audios/04_orig.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/04_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/04_gt.wav" controls style="width: 160px"></audio></td>
-      <td><audio src="audios/04_recon_proposed.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/04_recon_no_mask.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/04_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/04_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -96,7 +96,7 @@ This section presents all 16 audio pairs. For each pair, we present the original
       <td><audio src="audios/05_orig.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/05_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/05_gt.wav" controls style="width: 160px"></audio></td>
-      <td><audio src="audios/05_recon_proposed.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/05_recon_no_mask.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/05_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/05_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -105,7 +105,7 @@ This section presents all 16 audio pairs. For each pair, we present the original
       <td><audio src="audios/06_orig.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/06_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/06_gt.wav" controls style="width: 160px"></audio></td>
-      <td><audio src="audios/06_recon_proposed.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/06_recon_no_mask.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/06_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/06_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -114,7 +114,7 @@ This section presents all 16 audio pairs. For each pair, we present the original
       <td><audio src="audios/07_orig.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/07_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/07_gt.wav" controls style="width: 160px"></audio></td>
-      <td><audio src="audios/07_recon_proposed.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/07_recon_no_mask.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/07_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/07_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -123,7 +123,7 @@ This section presents all 16 audio pairs. For each pair, we present the original
       <td><audio src="audios/08_orig.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/08_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/08_gt.wav" controls style="width: 160px"></audio></td>
-      <td><audio src="audios/08_recon_proposed.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/08_recon_no_mask.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/08_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/08_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -132,7 +132,7 @@ This section presents all 16 audio pairs. For each pair, we present the original
       <td><audio src="audios/09_orig.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/09_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/09_gt.wav" controls style="width: 160px"></audio></td>
-      <td><audio src="audios/09_recon_proposed.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/09_recon_no_mask.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/09_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/09_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -141,7 +141,7 @@ This section presents all 16 audio pairs. For each pair, we present the original
       <td><audio src="audios/10_orig.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/10_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/10_gt.wav" controls style="width: 160px"></audio></td>
-      <td><audio src="audios/10_recon_proposed.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/10_recon_no_mask.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/10_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/10_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -150,7 +150,7 @@ This section presents all 16 audio pairs. For each pair, we present the original
       <td><audio src="audios/11_orig.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/11_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/11_gt.wav" controls style="width: 160px"></audio></td>
-      <td><audio src="audios/11_recon_proposed.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/11_recon_no_mask.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/11_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/11_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -159,7 +159,7 @@ This section presents all 16 audio pairs. For each pair, we present the original
       <td><audio src="audios/12_orig.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/12_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/12_gt.wav" controls style="width: 160px"></audio></td>
-      <td><audio src="audios/12_recon_proposed.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/12_recon_no_mask.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/12_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/12_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -168,7 +168,7 @@ This section presents all 16 audio pairs. For each pair, we present the original
       <td><audio src="audios/13_orig.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/13_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/13_gt.wav" controls style="width: 160px"></audio></td>
-      <td><audio src="audios/13_recon_proposed.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/13_recon_no_mask.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/13_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/13_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -177,7 +177,7 @@ This section presents all 16 audio pairs. For each pair, we present the original
       <td><audio src="audios/14_orig.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/14_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/14_gt.wav" controls style="width: 160px"></audio></td>
-      <td><audio src="audios/14_recon_proposed.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/14_recon_no_mask.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/14_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/14_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -186,7 +186,7 @@ This section presents all 16 audio pairs. For each pair, we present the original
       <td><audio src="audios/15_orig.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/15_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/15_gt.wav" controls style="width: 160px"></audio></td>
-      <td><audio src="audios/15_recon_proposed.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/15_recon_no_mask.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/15_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/15_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -195,7 +195,7 @@ This section presents all 16 audio pairs. For each pair, we present the original
       <td><audio src="audios/16_orig.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/16_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/16_gt.wav" controls style="width: 160px"></audio></td>
-      <td><audio src="audios/16_recon_proposed.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/16_recon_no_mask.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/16_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/16_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
