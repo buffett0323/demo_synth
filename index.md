@@ -38,13 +38,14 @@ Figure 2: Visualization of the ADSR envelope
 
 ## Preset Conversion Experiments with Audio Pairs
 
-This section presents some audio pairs used in the preset conversion experiments, organized into three groups based on ADSR characteristics. For each pair, we provide the original audio, reference audio, ground-truth reconstruction, our proposed model output, CTD, and SS-VQVAE. As illustrated in Figure 1, the model disentangles the input into three latent factors: ADSR, Content, and Timbre. In these experiments, we retain the Content features from the original audio while replacing the ADSR and Timbre features with those from the reference. Concretely, if the original audio is represented as $(A_1, C_1, T_1)$ and the reference as $(A_2, C_2, T_2)$, the reconstructed output is expected to yield $(A_2, C_1, T_2)$.
+This section presents some audio pairs used in the preset conversion experiments, organized into three groups based on ADSR characteristics. For each pair, we provide the original audio, reference audio, ground-truth reconstruction, our proposed model output, ablation without ADSR extractor, CTD, and SS-VQVAE. As illustrated in Figure 1, the model disentangles the input into three latent factors: ADSR, Content, and Timbre. In these experiments, we retain the Content features from the original audio while replacing the ADSR and Timbre features with those from the reference. Concretely, if the original audio is represented as $(A_1, C_1, T_1)$ and the reference as $(A_2, C_2, T_2)$, the reconstructed output is expected to yield $(A_2, C_1, T_2)$. The ablation without ADSR extractor demonstrates the importance of the ADSR component in the model architecture.
 
 ### Normal Cases
 
 <table class="table table-sm text-center" style="vertical-align: middle;">
   <colgroup>
       <col style="width: 120px;">
+      <col style="width: 160px;">
       <col style="width: 160px;">
       <col style="width: 160px;">
       <col style="width: 160px;">
@@ -59,6 +60,7 @@ This section presents some audio pairs used in the preset conversion experiments
       <th style="text-align:center;">Reference</th>
       <th style="text-align:center;">Ground Truth</th>
       <th style="text-align:center;">Proposed</th>
+      <th style="text-align:center;">Ablation w/o ADSR Extractor</th>
       <th style="text-align:center;">CTD</th>
       <th style="text-align:center;">SSVQVAE</th>
     </tr>
@@ -70,6 +72,7 @@ This section presents some audio pairs used in the preset conversion experiments
       <td><audio src="audios/01_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/01_gt.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/01_recon_no_mask.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/01_recon_abl.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/01_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/01_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -79,6 +82,7 @@ This section presents some audio pairs used in the preset conversion experiments
       <td><audio src="audios/02_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/02_gt.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/02_recon_no_mask.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/02_recon_abl.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/02_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/02_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -88,6 +92,7 @@ This section presents some audio pairs used in the preset conversion experiments
       <td><audio src="audios/03_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/03_gt.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/03_recon_no_mask.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/03_recon_abl.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/03_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/03_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -97,6 +102,7 @@ This section presents some audio pairs used in the preset conversion experiments
       <td><audio src="audios/06_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/06_gt.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/06_recon_no_mask.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/06_recon_abl.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/06_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/06_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -106,6 +112,7 @@ This section presents some audio pairs used in the preset conversion experiments
       <td><audio src="audios/08_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/08_gt.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/08_recon_no_mask.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/08_recon_abl.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/08_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/08_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -115,6 +122,7 @@ This section presents some audio pairs used in the preset conversion experiments
       <td><audio src="audios/10_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/10_gt.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/10_recon_no_mask.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/10_recon_abl.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/10_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/10_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -124,6 +132,7 @@ This section presents some audio pairs used in the preset conversion experiments
       <td><audio src="audios/11_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/11_gt.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/11_recon_no_mask.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/11_recon_abl.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/11_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/11_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -133,6 +142,7 @@ This section presents some audio pairs used in the preset conversion experiments
       <td><audio src="audios/12_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/12_gt.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/12_recon_no_mask.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/12_recon_abl.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/12_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/12_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -142,6 +152,7 @@ This section presents some audio pairs used in the preset conversion experiments
       <td><audio src="audios/13_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/13_gt.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/13_recon_no_mask.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/13_recon_abl.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/13_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/13_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -151,6 +162,7 @@ This section presents some audio pairs used in the preset conversion experiments
       <td><audio src="audios/14_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/14_gt.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/14_recon_no_mask.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/14_recon_abl.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/14_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/14_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -168,6 +180,7 @@ This section presents some audio pairs used in the preset conversion experiments
       <col style="width: 160px;">
       <col style="width: 160px;">
       <col style="width: 160px;">
+      <col style="width: 160px;">
     </colgroup>
   <thead>
     <tr>
@@ -176,6 +189,7 @@ This section presents some audio pairs used in the preset conversion experiments
       <th style="text-align:center;">Reference</th>
       <th style="text-align:center;">Ground Truth</th>
       <th style="text-align:center;">Proposed</th>
+      <th style="text-align:center;">Ablation w/o ADSR Extractor</th>
       <th style="text-align:center;">CTD</th>
       <th style="text-align:center;">SSVQVAE</th>
     </tr>
@@ -187,6 +201,7 @@ This section presents some audio pairs used in the preset conversion experiments
       <td><audio src="audios/04_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/04_gt.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/04_recon_no_mask.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/04_recon_abl.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/04_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/04_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -196,6 +211,7 @@ This section presents some audio pairs used in the preset conversion experiments
       <td><audio src="audios/07_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/07_gt.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/07_recon_no_mask.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/07_recon_abl.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/07_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/07_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -205,6 +221,7 @@ This section presents some audio pairs used in the preset conversion experiments
       <td><audio src="audios/09_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/09_gt.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/09_recon_no_mask.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/09_recon_abl.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/09_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/09_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -214,6 +231,7 @@ This section presents some audio pairs used in the preset conversion experiments
       <td><audio src="audios/15_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/15_gt.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/15_recon_no_mask.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/15_recon_abl.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/15_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/15_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -231,6 +249,7 @@ This section presents some audio pairs used in the preset conversion experiments
       <col style="width: 160px;">
       <col style="width: 160px;">
       <col style="width: 160px;">
+      <col style="width: 160px;">
     </colgroup>
   <thead>
     <tr>
@@ -239,6 +258,7 @@ This section presents some audio pairs used in the preset conversion experiments
       <th style="text-align:center;">Reference</th>
       <th style="text-align:center;">Ground Truth</th>
       <th style="text-align:center;">Proposed</th>
+      <th style="text-align:center;">Ablation w/o ADSR Extractor</th>
       <th style="text-align:center;">CTD</th>
       <th style="text-align:center;">SSVQVAE</th>
     </tr>
@@ -250,6 +270,7 @@ This section presents some audio pairs used in the preset conversion experiments
       <td><audio src="audios/05_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/05_gt.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/05_recon_no_mask.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/05_recon_abl.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/05_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/05_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
@@ -259,6 +280,7 @@ This section presents some audio pairs used in the preset conversion experiments
       <td><audio src="audios/16_ref.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/16_gt.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/16_recon_no_mask.wav" controls style="width: 160px"></audio></td>
+      <td><audio src="audios/16_recon_abl.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/16_recon_ctd.wav" controls style="width: 160px"></audio></td>
       <td><audio src="audios/16_recon_ssvqvae.wav" controls style="width: 160px"></audio></td>
     </tr>
