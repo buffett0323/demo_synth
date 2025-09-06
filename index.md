@@ -59,8 +59,8 @@ This section presents some audio pairs used in the preset conversion experiments
       <th style="text-align:center;">Original</th>
       <th style="text-align:center;">Reference</th>
       <th style="text-align:center;">Ground Truth</th>
-      <th style="text-align:center;">Proposed</th>
-      <th style="text-align:center;">Ablation w/o ADSR Extractor</th>
+      <th style="text-align:center;">Propo<strong>Proposed</strong>sed</th>
+      <th style="text-align:center;">w/o ADSR Extractor</th>
       <th style="text-align:center;">CTD</th>
       <th style="text-align:center;">SSVQVAE</th>
     </tr>
@@ -188,8 +188,8 @@ This section presents some audio pairs used in the preset conversion experiments
       <th style="text-align:center;">Original</th>
       <th style="text-align:center;">Reference</th>
       <th style="text-align:center;">Ground Truth</th>
-      <th style="text-align:center;">Proposed</th>
-      <th style="text-align:center;">Ablation w/o ADSR Extractor</th>
+      <th style="text-align:center;"><strong>Proposed</strong></th>
+      <th style="text-align:center;">w/o ADSR Extractor</th>
       <th style="text-align:center;">CTD</th>
       <th style="text-align:center;">SSVQVAE</th>
     </tr>
@@ -257,8 +257,8 @@ This section presents some audio pairs used in the preset conversion experiments
       <th style="text-align:center;">Original</th>
       <th style="text-align:center;">Reference</th>
       <th style="text-align:center;">Ground Truth</th>
-      <th style="text-align:center;">Proposed</th>
-      <th style="text-align:center;">Ablation w/o ADSR Extractor</th>
+      <th style="text-align:center;"><strong>Proposed</strong></th>
+      <th style="text-align:center;">w/o ADSR Extractor</th>
       <th style="text-align:center;">CTD</th>
       <th style="text-align:center;">SSVQVAE</th>
     </tr>
@@ -439,9 +439,9 @@ This section demonstrates the disentanglement control capabilities of our model,
 
 </div>
 
-## Timbre Control Examples
+<!-- ## Timbre Control Examples
 
-This section demonstrates the timbre control capabilities of our model, showing how timbre characteristics can be manipulated while preserving other audio properties.
+This section demonstrates the timbre control capabilities of our model, showing how timbre characteristics can be manipulated while preserving other audio properties. -->
 
 ### Timbre Control Example 1
 
@@ -449,42 +449,42 @@ This section demonstrates the timbre control capabilities of our model, showing 
 
 <div style="flex: 1; text-align: center; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #f0f8ff;">
   <div style="margin-bottom: 15px;">
-    <strong>01_orig (Audio)</strong><br>
+    <strong>Example 1 (Audio)</strong><br>
     <audio controls style="width: 100%; max-width: 300px; height: 40px;">
       <source src="control_audios/conv_timbre/01_orig.wav" type="audio/wav">
       Your browser does not support the audio element.
     </audio>
   </div>
   <div>
-    <strong>01_orig (Image)</strong><br>
+    <strong>Example 1 (Image)</strong><br>
     <img src="control_images/conv_timbre/01_orig.png" alt="01_orig" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 4px;">
   </div>
 </div>
 
 <div style="flex: 1; text-align: center; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #f0f8ff;">
   <div style="margin-bottom: 15px;">
-    <strong>01_ref (Audio)</strong><br>
+    <strong>Example 1 (Audio)</strong><br>
     <audio controls style="width: 100%; max-width: 300px; height: 40px;">
       <source src="control_audios/conv_timbre/01_ref.wav" type="audio/wav">
       Your browser does not support the audio element.
     </audio>
   </div>
   <div>
-    <strong>01_ref (Image)</strong><br>
+    <strong>Example 1 (Image)</strong><br>
     <img src="control_images/conv_timbre/01_ref.png" alt="01_ref" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 4px;">
   </div>
 </div>
 
 <div style="flex: 1; text-align: center; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #f0f8ff;">
   <div style="margin-bottom: 15px;">
-    <strong>01_conv_timbre (Audio)</strong><br>
+    <strong>Example 1 (Audio)</strong><br>
     <audio controls style="width: 100%; max-width: 300px; height: 40px;">
       <source src="control_audios/conv_timbre/01_timbre.wav" type="audio/wav">
       Your browser does not support the audio element.
     </audio>
   </div>
   <div>
-    <strong>01_conv_timbre (Image)</strong><br>
+    <strong>Example 1 (Image)</strong><br>
     <img src="control_images/conv_timbre/01_conv_timbre.png" alt="01_conv_timbre" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 4px;">
   </div>
 </div>
@@ -497,42 +497,42 @@ This section demonstrates the timbre control capabilities of our model, showing 
 
 <div style="flex: 1; text-align: center; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #f0f8ff;">
   <div style="margin-bottom: 15px;">
-    <strong>02_orig (Audio)</strong><br>
+    <strong>Example 2 (Audio)</strong><br>
     <audio controls style="width: 100%; max-width: 300px; height: 40px;">
       <source src="control_audios/conv_timbre/02_orig.wav" type="audio/wav">
       Your browser does not support the audio element.
     </audio>
   </div>
   <div>
-    <strong>02_orig (Image)</strong><br>
+    <strong>Example 2 (Image)</strong><br>
     <img src="control_images/conv_timbre/02_orig.png" alt="02_orig" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 4px;">
   </div>
 </div>
 
 <div style="flex: 1; text-align: center; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #f0f8ff;">
   <div style="margin-bottom: 15px;">
-    <strong>02_ref (Audio)</strong><br>
+    <strong>Example 2 (Audio)</strong><br>
     <audio controls style="width: 100%; max-width: 300px; height: 40px;">
       <source src="control_audios/conv_timbre/02_ref.wav" type="audio/wav">
       Your browser does not support the audio element.
     </audio>
   </div>
   <div>
-    <strong>02_ref (Image)</strong><br>
+    <strong>Example 2 (Image)</strong><br>
     <img src="control_images/conv_timbre/02_ref.png" alt="02_ref" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 4px;">
   </div>
 </div>
 
 <div style="flex: 1; text-align: center; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #f0f8ff;">
   <div style="margin-bottom: 15px;">
-    <strong>02_conv_timbre (Audio)</strong><br>
+    <strong>Example 2 (Audio)</strong><br>
     <audio controls style="width: 100%; max-width: 300px; height: 40px;">
       <source src="control_audios/conv_timbre/02_timbre.wav" type="audio/wav">
       Your browser does not support the audio element.
     </audio>
   </div>
   <div>
-    <strong>02_conv_timbre (Image)</strong><br>
+    <strong>Example 2 (Image)</strong><br>
     <img src="control_images/conv_timbre/02_conv_timbre.png" alt="02_conv_timbre" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 4px;">
   </div>
 </div>
