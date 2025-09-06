@@ -13,7 +13,7 @@
 
 ## Abstract
 
-This collection presents 32 audio pairs, each containing 6 distinct audio files for comprehensive audio analysis and comparison. Each pair includes original audio, reference audio, ground truth audio, proposed model, CTD <a href="#note1" id="note1ref">[1]</a>, and SS-VQVAE <a href="#note2" id="note2ref">[2]</a>, enabling detailed evaluation of multiple audio processing methods and reconstruction quality. The dataset provides a standardized framework for comparing different audio reconstruction approaches across various audio content types. Code is available <a href="https://github.com/buffett0323/query_ss">here</a>
+This collection presents 16 audio pairs for comprehensive evaluation of synthesizer preset conversion methods. Each pair contains 7 distinct audio files: original audio, reference audio, ground truth reconstruction, our proposed model output, ablation without ADSR extractor, CTD <a href="#note1" id="note1ref">[1]</a>, and SS-VQVAE <a href="#note2" id="note2ref">[2]</a>. This standardized framework enables detailed comparison of different audio reconstruction approaches across various content types. Code is available <a href="https://github.com/buffett0323/query_ss">here</a>.
 
 
 
@@ -26,7 +26,15 @@ Figure 1: SynthCloner model framework
 
 
 ## ADSR Definition
-As shown in Figure 2, ADSR stands for <b>Attack</b>, <b>Decay</b>, <b>Sustain</b>, <b>Release</b>, and it is a standard envelope model used in sound synthesis to shape how a note evolves over time. The attack phase, illustrated by the initial rising slope, is the time it takes for the sound to rise from silence to its maximum amplitude after a note is pressed. The decay phase follows, shown by the descending curve, describing how quickly the sound decreases from the peak to the sustain level. The sustain, represented by the horizontal line, is not a time but a level, representing the steady amplitude maintained as long as the note is held. Finally, the release phase, depicted by the final downward slope, is the time it takes for the sound to fade back to silence after the note is released. Together, these 4 stages give electronic instruments their dynamic and expressive qualities, mimicking the way acoustic instruments naturally produce sound.
+
+ADSR (Attack, Decay, Sustain, Release) is a fundamental envelope model in sound synthesis that shapes how a note evolves over time. As illustrated in Figure 2, this four-stage process controls the dynamic characteristics of synthesized sounds:
+
+- **Attack**: The initial rising phase where sound reaches maximum amplitude from silence
+- **Decay**: The descending phase where sound decreases from peak to sustain level  
+- **Sustain**: The steady amplitude level maintained while the note is held (a level, not a time duration)
+- **Release**: The final phase where sound fades back to silence after the note is released
+
+Together, these stages give electronic instruments their dynamic and expressive qualities, mimicking the natural behavior of acoustic instruments.
 
 <p align="center">
 <img src="images/ADSR.png" alt="ADSR">
@@ -38,7 +46,9 @@ Figure 2: Visualization of the ADSR envelope
 
 ## Preset Conversion Experiments with Audio Pairs
 
-This section presents some audio pairs used in the preset conversion experiments, organized into three groups based on ADSR characteristics. For each pair, we provide the original audio, reference audio, ground-truth reconstruction, our proposed model output, ablation without ADSR extractor, CTD, and SS-VQVAE. As illustrated in Figure 1, the model disentangles the input into three latent factors: ADSR, Content, and Timbre. In these experiments, we retain the Content features from the original audio while replacing the ADSR and Timbre features with those from the reference. Concretely, if the original audio is represented as $(A_1, C_1, T_1)$ and the reference as $(A_2, C_2, T_2)$, the reconstructed output is expected to yield $(A_2, C_1, T_2)$. The ablation without ADSR extractor demonstrates the importance of the ADSR component in the model architecture.
+This section presents audio pairs from our preset conversion experiments, organized into three groups based on ADSR characteristics. Each pair includes: original audio, reference audio, ground-truth reconstruction, our proposed model output, ablation without ADSR extractor, CTD, and SS-VQVAE.
+
+As shown in Figure 1, our model disentangles audio into three latent factors: ADSR, Content, and Timbre. In these experiments, we preserve the Content features from the original audio while replacing the ADSR and Timbre features with those from the reference audio. Specifically, if the original audio is represented as (e₁, c₁, t₁) and the reference as (e₂, c₂, t₂), the reconstructed output yields (e₂, c₁, t₂). The ablation study without the ADSR extractor demonstrates the critical importance of this component in our model architecture.
 
 ### Normal Cases
 
@@ -291,7 +301,7 @@ This section presents some audio pairs used in the preset conversion experiments
 
 ## Timbre/ADSR Disentanglement Control
 
-This section demonstrates the disentanglement control capabilities of our model, showing how ADSR characteristics can be manipulated while preserving other audio properties. Each example shows the original audio, reference audio, and the converted audio with ADSR control, along with their corresponding visual representations.
+This section demonstrates our model's disentanglement control capabilities, showcasing how ADSR and timbre characteristics can be independently manipulated while preserving other audio properties. Each example presents the original audio, reference audio, and converted audio with their corresponding visual representations.
 
 ### ADSR Control Example 1
 
