@@ -293,7 +293,7 @@ This section presents some audio pairs used in the preset conversion experiments
 
 This section demonstrates the disentanglement control capabilities of our model, showing how ADSR characteristics can be manipulated while preserving other audio properties. Each example shows the original audio, reference audio, and the converted audio with ADSR control, along with their corresponding visual representations.
 
-### ADSR Control Example (Pair 02)
+### ADSR Control Example 1
 
 <div style="display: flex; flex-direction: row; gap: 20px; margin: 20px 0; align-items: flex-start;">
 
@@ -341,9 +341,9 @@ This section demonstrates the disentanglement control capabilities of our model,
 
 </div>
 
-*Note: The audio players are positioned above their corresponding images for easy comparison. The converted audio demonstrates ADSR control while maintaining other audio characteristics.*
+<!-- *Note: The audio players are positioned above their corresponding images for easy comparison. The converted audio demonstrates ADSR control while maintaining other audio characteristics.* -->
 
-### ADSR Control Example (Pair 04)
+### ADSR Control Example 2
 
 <div style="display: flex; flex-direction: row; gap: 20px; margin: 20px 0; align-items: flex-start;">
 
@@ -391,7 +391,7 @@ This section demonstrates the disentanglement control capabilities of our model,
 
 </div>
 
-### ADSR Control Example (Pair 07)
+### ADSR Control Example 3
 
 <div style="display: flex; flex-direction: row; gap: 20px; margin: 20px 0; align-items: flex-start;">
 
@@ -443,7 +443,7 @@ This section demonstrates the disentanglement control capabilities of our model,
 
 This section demonstrates the timbre control capabilities of our model, showing how timbre characteristics can be manipulated while preserving other audio properties.
 
-### Timbre Control Example (Pair 01)
+### Timbre Control Example 1
 
 <div style="display: flex; flex-direction: row; gap: 20px; margin: 20px 0; align-items: flex-start;">
 
@@ -491,7 +491,7 @@ This section demonstrates the timbre control capabilities of our model, showing 
 
 </div>
 
-### Timbre Control Example (Pair 02)
+### Timbre Control Example 2
 
 <div style="display: flex; flex-direction: row; gap: 20px; margin: 20px 0; align-items: flex-start;">
 
@@ -539,7 +539,7 @@ This section demonstrates the timbre control capabilities of our model, showing 
 
 </div>
 
-*Note: The audio players are positioned above their corresponding images for easy comparison. The converted audio demonstrates timbre control while maintaining other audio characteristics.*
+<!-- *Note: The audio players are positioned above their corresponding images for easy comparison. The converted audio demonstrates timbre control while maintaining other audio characteristics.* -->
 
 
 
