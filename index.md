@@ -289,11 +289,257 @@ This section presents some audio pairs used in the preset conversion experiments
 
 
 
-## Dataset render
-<p align="center">
-<img src="images/ADSR_diagram.png" alt="Audio Pairs Overview">
-</p>
+## Timbre/ADSR Disentanglement Control
 
+This section demonstrates the disentanglement control capabilities of our model, showing how ADSR characteristics can be manipulated while preserving other audio properties. Each example shows the original audio, reference audio, and the converted audio with ADSR control, along with their corresponding visual representations.
+
+### ADSR Control Example (Pair 02)
+
+<div style="display: flex; flex-direction: row; gap: 20px; margin: 20px 0; align-items: flex-start;">
+
+<div style="flex: 1; text-align: center; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #fafafa;">
+  <div style="margin-bottom: 15px;">
+    <strong>02_orig (Audio)</strong><br>
+    <audio controls style="width: 100%; max-width: 300px; height: 40px;">
+      <source src="control_audios/conv_adsr/02_orig.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <div>
+    <strong>02_orig (Image)</strong><br>
+    <img src="control_images/conv_adsr/02_orig.png" alt="02_orig" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 4px;">
+  </div>
+</div>
+
+<div style="flex: 1; text-align: center; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #fafafa;">
+  <div style="margin-bottom: 15px;">
+    <strong>02_ref (Audio)</strong><br>
+    <audio controls style="width: 100%; max-width: 300px; height: 40px;">
+      <source src="control_audios/conv_adsr/02_ref.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <div>
+    <strong>02_ref (Image)</strong><br>
+    <img src="control_images/conv_adsr/02_ref.png" alt="02_ref" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 4px;">
+  </div>
+</div>
+
+<div style="flex: 1; text-align: center; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #fafafa;">
+  <div style="margin-bottom: 15px;">
+    <strong>02_conv_adsr (Audio)</strong><br>
+    <audio controls style="width: 100%; max-width: 300px; height: 40px;">
+      <source src="control_audios/conv_adsr/02_adsr.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <div>
+    <strong>02_conv_adsr (Image)</strong><br>
+    <img src="control_images/conv_adsr/02_conv_adsr.png" alt="02_conv_adsr" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 4px;">
+  </div>
+</div>
+
+</div>
+
+*Note: The audio players are positioned above their corresponding images for easy comparison. The converted audio demonstrates ADSR control while maintaining other audio characteristics.*
+
+### ADSR Control Example (Pair 04)
+
+<div style="display: flex; flex-direction: row; gap: 20px; margin: 20px 0; align-items: flex-start;">
+
+<div style="flex: 1; text-align: center; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #fafafa;">
+  <div style="margin-bottom: 15px;">
+    <strong>04_orig (Audio)</strong><br>
+    <audio controls style="width: 100%; max-width: 300px; height: 40px;">
+      <source src="control_audios/conv_adsr/04_orig.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <div>
+    <strong>04_orig (Image)</strong><br>
+    <img src="control_images/conv_adsr/04_orig.png" alt="04_orig" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 4px;">
+  </div>
+</div>
+
+<div style="flex: 1; text-align: center; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #fafafa;">
+  <div style="margin-bottom: 15px;">
+    <strong>04_ref (Audio)</strong><br>
+    <audio controls style="width: 100%; max-width: 300px; height: 40px;">
+      <source src="control_audios/conv_adsr/04_ref.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <div>
+    <strong>04_ref (Image)</strong><br>
+    <img src="control_images/conv_adsr/04_ref.png" alt="04_ref" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 4px;">
+  </div>
+</div>
+
+<div style="flex: 1; text-align: center; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #fafafa;">
+  <div style="margin-bottom: 15px;">
+    <strong>04_conv_adsr (Audio)</strong><br>
+    <audio controls style="width: 100%; max-width: 300px; height: 40px;">
+      <source src="control_audios/conv_adsr/04_adsr.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <div>
+    <strong>04_conv_adsr (Image)</strong><br>
+    <img src="control_images/conv_adsr/04_conv_adsr.png" alt="04_conv_adsr" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 4px;">
+  </div>
+</div>
+
+</div>
+
+### ADSR Control Example (Pair 07)
+
+<div style="display: flex; flex-direction: row; gap: 20px; margin: 20px 0; align-items: flex-start;">
+
+<div style="flex: 1; text-align: center; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #fafafa;">
+  <div style="margin-bottom: 15px;">
+    <strong>07_orig (Audio)</strong><br>
+    <audio controls style="width: 100%; max-width: 300px; height: 40px;">
+      <source src="control_audios/conv_adsr/07_orig.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <div>
+    <strong>07_orig (Image)</strong><br>
+    <img src="control_images/conv_adsr/07_orig.png" alt="07_orig" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 4px;">
+  </div>
+</div>
+
+<div style="flex: 1; text-align: center; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #fafafa;">
+  <div style="margin-bottom: 15px;">
+    <strong>07_ref (Audio)</strong><br>
+    <audio controls style="width: 100%; max-width: 300px; height: 40px;">
+      <source src="control_audios/conv_adsr/07_ref.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <div>
+    <strong>07_ref (Image)</strong><br>
+    <img src="control_images/conv_adsr/07_ref.png" alt="07_ref" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 4px;">
+  </div>
+</div>
+
+<div style="flex: 1; text-align: center; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #fafafa;">
+  <div style="margin-bottom: 15px;">
+    <strong>07_conv_adsr (Audio)</strong><br>
+    <audio controls style="width: 100%; max-width: 300px; height: 40px;">
+      <source src="control_audios/conv_adsr/07_adsr.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <div>
+    <strong>07_conv_adsr (Image)</strong><br>
+    <img src="control_images/conv_adsr/07_conv_adsr.png" alt="07_conv_adsr" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 4px;">
+  </div>
+</div>
+
+</div>
+
+## Timbre Control Examples
+
+This section demonstrates the timbre control capabilities of our model, showing how timbre characteristics can be manipulated while preserving other audio properties.
+
+### Timbre Control Example (Pair 01)
+
+<div style="display: flex; flex-direction: row; gap: 20px; margin: 20px 0; align-items: flex-start;">
+
+<div style="flex: 1; text-align: center; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #f0f8ff;">
+  <div style="margin-bottom: 15px;">
+    <strong>01_orig (Audio)</strong><br>
+    <audio controls style="width: 100%; max-width: 300px; height: 40px;">
+      <source src="control_audios/conv_timbre/01_orig.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <div>
+    <strong>01_orig (Image)</strong><br>
+    <img src="control_images/conv_timbre/01_orig.png" alt="01_orig" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 4px;">
+  </div>
+</div>
+
+<div style="flex: 1; text-align: center; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #f0f8ff;">
+  <div style="margin-bottom: 15px;">
+    <strong>01_ref (Audio)</strong><br>
+    <audio controls style="width: 100%; max-width: 300px; height: 40px;">
+      <source src="control_audios/conv_timbre/01_ref.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <div>
+    <strong>01_ref (Image)</strong><br>
+    <img src="control_images/conv_timbre/01_ref.png" alt="01_ref" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 4px;">
+  </div>
+</div>
+
+<div style="flex: 1; text-align: center; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #f0f8ff;">
+  <div style="margin-bottom: 15px;">
+    <strong>01_conv_timbre (Audio)</strong><br>
+    <audio controls style="width: 100%; max-width: 300px; height: 40px;">
+      <source src="control_audios/conv_timbre/01_timbre.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <div>
+    <strong>01_conv_timbre (Image)</strong><br>
+    <img src="control_images/conv_timbre/01_conv_timbre.png" alt="01_conv_timbre" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 4px;">
+  </div>
+</div>
+
+</div>
+
+### Timbre Control Example (Pair 02)
+
+<div style="display: flex; flex-direction: row; gap: 20px; margin: 20px 0; align-items: flex-start;">
+
+<div style="flex: 1; text-align: center; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #f0f8ff;">
+  <div style="margin-bottom: 15px;">
+    <strong>02_orig (Audio)</strong><br>
+    <audio controls style="width: 100%; max-width: 300px; height: 40px;">
+      <source src="control_audios/conv_timbre/02_orig.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <div>
+    <strong>02_orig (Image)</strong><br>
+    <img src="control_images/conv_timbre/02_orig.png" alt="02_orig" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 4px;">
+  </div>
+</div>
+
+<div style="flex: 1; text-align: center; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #f0f8ff;">
+  <div style="margin-bottom: 15px;">
+    <strong>02_ref (Audio)</strong><br>
+    <audio controls style="width: 100%; max-width: 300px; height: 40px;">
+      <source src="control_audios/conv_timbre/02_ref.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <div>
+    <strong>02_ref (Image)</strong><br>
+    <img src="control_images/conv_timbre/02_ref.png" alt="02_ref" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 4px;">
+  </div>
+</div>
+
+<div style="flex: 1; text-align: center; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #f0f8ff;">
+  <div style="margin-bottom: 15px;">
+    <strong>02_conv_timbre (Audio)</strong><br>
+    <audio controls style="width: 100%; max-width: 300px; height: 40px;">
+      <source src="control_audios/conv_timbre/02_timbre.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <div>
+    <strong>02_conv_timbre (Image)</strong><br>
+    <img src="control_images/conv_timbre/02_conv_timbre.png" alt="02_conv_timbre" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 4px;">
+  </div>
+</div>
+
+</div>
+
+*Note: The audio players are positioned above their corresponding images for easy comparison. The converted audio demonstrates timbre control while maintaining other audio characteristics.*
 
 
 
